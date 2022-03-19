@@ -9,7 +9,7 @@
   "commands": [
     {
       "name": "index",
-      "title": "Hello World",
+      "title": "Download",
       "description": "Template with a plain detail view",
       "mode": "view"
     }
