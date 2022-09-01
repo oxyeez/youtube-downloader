@@ -1,6 +1,6 @@
 import { Form, ActionPanel, showToast, Toast, Icon, Action } from "@raycast/api";
 import ytdl from "ytdl-core";
-import { createWriteStream, chmodSync } from "fs";
+import { createWriteStream} from "fs";
 import { homedir } from "os";
 import isValidFilename from "valid-filename";
 var ffmpegPath = require("ffmpeg-static") as string;
@@ -61,7 +61,6 @@ function DownloadAction() {
     var home = homedir();
     var filepath = home.concat("/Downloads/" + name + ".mp4");
     let ffmpegProcess = cp.spawn(
-      // "/Users/marcelinliehn/.config/raycast/extensions/youtube-downloader/node_modules/ffmpeg-static/ffmpeg",
       ffmpegPath.replace("ffmpeg", "node_modules/ffmpeg-static/ffmpeg"),
       [
         // supress non-crucial messages
