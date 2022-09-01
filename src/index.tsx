@@ -122,7 +122,7 @@ function DownloadAction() {
   }
 
   
-  return <Action.SubmitForm icon={Icon.Checkmark} title="Format" onSubmit={download} />;
+  return <Action.SubmitForm icon={Icon.Checkmark} title="Download" onSubmit={download} />;
 }
 
 
